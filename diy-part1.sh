@@ -17,5 +17,5 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-src-git weifuture https://github.com/hongweifuture/openwrt-packages
-src-git pwdep https://github.com/hongweifuture/pwdep.git
+sed -i '$a src-git weifuture https://github.com/hongweifuture/openwrt-packages' feeds.conf.default
+sed -i '$a src-git pwdep https://github.com/hongweifuture/pwdep.git' feeds.conf.default
